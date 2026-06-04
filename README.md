@@ -56,3 +56,10 @@ npm run dev
 The application is deployed on Vercel and uses a hosted database. The same `DATABASE_URL` should be added to the Vercel project environment variables before deployment.
 
 
+## AI Usage
+
+AI tools were used to assist with initial project setup, boilerplate code generation, and documentation. The implementation was reviewed, modified, and tested manually to ensure it follows the assignment requirements.
+
+## Future Improvement
+
+I would add image upload support instead of using an optional image URL field, so users can upload notice images directly from the form.
