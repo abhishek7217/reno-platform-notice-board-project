@@ -21,19 +21,15 @@ export default function NoticeCard({ notice, onDelete }) {
       <div className="space-y-4 p-5">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
-            
-
-                {/* Notice priority check */}
+            {/* Notice priority check */}
+            {/* Single badge – shows "Urgent" or "Normal" with correct styling */}
             <span
-              className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset ${getNoticeBadgeClass(
+              className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset ${getNoticeBadgeClass(
                 notice.priority,
               )}`}
             >
-              <span>{notice.priority}</span>
-              <span className="opacity-50">•</span>
-              <span>{notice.priority === "Urgent" ? "Urgent" : "Normal"}</span>
+              {notice.priority}
             </span>
-
 
             <h2 className="mt-3 text-lg font-semibold text-slate-900">
               {notice.title}
